@@ -4,7 +4,14 @@ body {
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     background-image: url('./images/bg-pattern.png');
     margin: 30px;
-  }
+}
+
+.color-section{
+    background-color: #768492;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 
 .section{
     display: flex;
@@ -34,11 +41,39 @@ p{
 }
 
 .section__photo{
-    box-shadow: blue 5px 15px 15px;
+    box-shadow: black 5px 5px 15px;
 }
 
 .section{
     margin-bottom: 90px;
 }
+
+h5{
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+input::placeholder{
+    text-transform: uppercase;
+}
+
+
+    input[type="search"] {
+    border-top: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 400px;
+    font-size: 20px;
+    height: 50px; /* Ширина поля */
+    vertical-align: middle; /* Выравнивание по середине */
+    }
+    input[type="submit"] {
+    width: 50px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    border: none; 
+   
+   }
+   
 
 

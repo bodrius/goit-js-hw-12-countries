@@ -8,8 +8,9 @@ import PNotify from '../node_modules/pnotify/dist/es/PNotify.js';
 import PNotifyButtons from '../node_modules/pnotify/dist/es/PNotifyButtons.js';
 import '../node_modules/pnotify/dist/PNotifyBrightTheme.css';
 
+
 const choiseInput = document.querySelector('input');
-choiseInput.addEventListener('input', _.debounce(writeCountry, 500));
+choiseInput.addEventListener('input', _.debounce(writeCountry, 700));
 const choiseCountry = document.querySelector('#section-country');
 const choiseUlList = document.querySelector('#country-list');
 
