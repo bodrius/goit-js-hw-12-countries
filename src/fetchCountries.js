@@ -22,7 +22,6 @@ fetch(baseUrl).then(response => {
     storage[searchQuery] =data;
     localStorage.setItem(STORAGE, JSON.stringify(storage));
     callback(data);
-    // console.log(data);
 }).catch(error =>{
     console.log(error);
 });

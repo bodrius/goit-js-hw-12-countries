@@ -27,7 +27,7 @@ function buildResult(array) {
       title: 'Oh No!',
       text: 'Something terrible happened.',
     });
-  } else if (array.length > 2 && array.length < 10) {
+  } else if (array.length >= 2 && array.length <= 10) {
     const markUpList = array.map(name => countryBuildList(name)).join('');
     choiseUlList.insertAdjacentHTML('beforeend', markUpList);
   } else if (array.length === 1) {

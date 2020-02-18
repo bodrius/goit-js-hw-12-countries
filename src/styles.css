@@ -56,6 +56,7 @@ h5{
 
 input::placeholder{
     text-transform: uppercase;
+    
 }
 
 
@@ -67,6 +68,7 @@ input::placeholder{
     font-size: 20px;
     height: 50px; /* Ширина поля */
     vertical-align: middle; /* Выравнивание по середине */
+    padding-left: 10px;
     }
     input[type="submit"] {
     width: 50px; /* Ширина кнопки */
