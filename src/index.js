@@ -15,6 +15,7 @@ const choiseUlList = document.querySelector('#country-list');
 
 function writeCountry(event) {
   clearInput();
+  PNotify.closeAll();
   if (!event.target.value) {
     return;
   }
