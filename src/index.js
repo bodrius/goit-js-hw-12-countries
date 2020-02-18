@@ -8,7 +8,6 @@ import PNotify from '../node_modules/pnotify/dist/es/PNotify.js';
 import PNotifyButtons from '../node_modules/pnotify/dist/es/PNotifyButtons.js';
 import '../node_modules/pnotify/dist/PNotifyBrightTheme.css';
 
-
 const choiseInput = document.querySelector('input');
 choiseInput.addEventListener('input', _.debounce(writeCountry, 700));
 const choiseCountry = document.querySelector('#section-country');
@@ -34,6 +33,11 @@ function buildResult(array) {
   } else if (array.length === 1) {
     const markUp = countryBuildHtml(array);
     choiseCountry.insertAdjacentHTML('beforeend', markUp);
+  } else{
+    PNotify.notice({
+      title: 'WARNING!!!',
+      text: 'ENTER CORRECT COUNTRY'
+    });
   }
 }
 
